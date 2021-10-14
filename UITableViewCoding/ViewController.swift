@@ -38,6 +38,7 @@ final class ViewController: UIViewController {
         hierarchy()
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
         tableView.dataSource = self
+        tableView.delegate = self
         
         updateLayout(with: view.frame.size)
     
@@ -107,4 +108,20 @@ extension ViewController: UITableViewDataSource {
           print("Переключатель \"\(listForFirstSection[sender.tag])\" в положение \(sender.isOn ? "ON" : "OFF")")
     }
     
+}
+
+//MARK: - UITableViewDelegate
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            print("Выбрана ячейка \"\(listForFirstSection[indexPath.row])\"")
+        case 1:
+            print("Выбрана ячейка \"\(listForSecondSection[indexPath.row])\"")
+        default:
+            print("Выбрана ячейка \"\(listForThirdSection[indexPath.row])\"")
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
