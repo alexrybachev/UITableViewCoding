@@ -12,6 +12,7 @@
 		280269142718A635000A06CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280269122718A635000A06CD /* Main.storyboard */; };
 		280269162718A636000A06CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280269152718A636000A06CD /* Assets.xcassets */; };
 		280269192718A636000A06CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280269172718A636000A06CD /* LaunchScreen.storyboard */; };
+		280269212718A84F000A06CD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280269202718A84F000A06CD /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		280269152718A636000A06CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280269182718A636000A06CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2802691A2718A636000A06CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280269202718A84F000A06CD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				2802690C2718A635000A06CD /* AppDelegate.swift */,
 				280269102718A635000A06CD /* ViewController.swift */,
+				280269202718A84F000A06CD /* TableViewCell.swift */,
 				280269122718A635000A06CD /* Main.storyboard */,
 				280269152718A636000A06CD /* Assets.xcassets */,
 				280269172718A636000A06CD /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280269212718A84F000A06CD /* TableViewCell.swift in Sources */,
 				280269112718A635000A06CD /* ViewController.swift in Sources */,
 				2802690D2718A635000A06CD /* AppDelegate.swift in Sources */,
 			);
