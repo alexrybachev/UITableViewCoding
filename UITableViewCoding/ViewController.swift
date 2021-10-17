@@ -32,7 +32,8 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        title = "Настройки"
+        navigationItem.title = "Настройки"
+//        title = "Настройки"
         navigationController?.navigationBar.prefersLargeTitles = false
         
         hierarchy()
@@ -72,7 +73,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        guard let cell  = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as? TableViewCell else { return UITableViewCell() }
         var content = cell.defaultContentConfiguration()
         
         
